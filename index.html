@@ -53,105 +53,78 @@
   </style>
 </head>
 <body class="text-white bubble-bg">
-
-  <!-- HERO SECTION -->
-<!-- HERO SECTION WITH FLOATING LANGUAGE LOGOS -->
 <!-- HERO SECTION -->
 <section class="relative bg-black min-h-screen flex items-center justify-center px-6 md:px-16 py-20 overflow-hidden" id="hero">
 
-  <!-- CYAN GLOW BACKGROUND -->
-  <div class="absolute inset-0 z-0 pointer-events-none">
-    <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1800px] h-[1800px] bg-cyan-400 rounded-full opacity-[0.06] blur-[320px]"></div>
-  </div>
-
-  <!-- STAR BACKGROUND -->
-  <div class="absolute inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-5"></div>
-
-  <!-- FLOATING TECH ICONS -->
-  <div class="absolute inset-0 z-0 pointer-events-none">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-         class="w-10 absolute top-10 left-10 animate-float-slow opacity-20" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-         class="w-10 absolute bottom-20 left-24 animate-float-medium opacity-20" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-         class="w-10 absolute top-32 right-24 animate-float-fast opacity-20" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-         class="w-12 absolute bottom-10 right-16 animate-float-slow opacity-20" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-         class="w-10 absolute top-1/2 left-[20%] animate-float-medium opacity-20" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-         class="w-10 absolute bottom-1/3 right-[15%] animate-float-fast opacity-20" />
-  </div>
-
-  <!-- HERO CONTENT -->
-  <div class="relative z-10 max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 items-center gap-12 backdrop-blur-md bg-white/5 rounded-3xl border border-white/10 shadow-xl p-8 md:p-16">
-
-    <!-- LEFT TEXT -->
-    <div class="text-center md:text-left space-y-6" data-aos="fade-right">
-      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight bg-gradient-to-r from-cyan-300 via-white to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_10px_#00ffffaa]">
-        Hey, I'm Jafar Khan
-      </h1>
-      <h2 class="text-lg sm:text-xl font-mono text-cyan-300 min-h-[32px]">
-        <span id="typing" class="whitespace-nowrap"></span>
-      </h2>
-      <p class="text-gray-400 text-base max-w-md mx-auto md:mx-0">
-        I specialize in modern full-stack web development — crafting smooth frontend UIs and building scalable backend systems.
-      </p>
-      <a href="#contact" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold shadow-md transition duration-300">
-        Contact Me
-      </a>
+    <!-- CYAN GLOW BACKGROUND -->
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1800px] h-[1800px] bg-cyan-400 rounded-full opacity-[0.06] blur-[320px]"></div>
     </div>
-
-    <!-- RIGHT LOTTIE -->
-    <div class="flex justify-center" data-aos="fade-left" data-aos-delay="200">
-      <lottie-player
-        src="https://assets4.lottiefiles.com/packages/lf20_w51pcehl.json"
-        background="transparent"
-        speed="1"
-        loop
-        autoplay
-        class="w-[300px] sm:w-[380px] md:w-[440px]"
-      ></lottie-player>
+  
+    <!-- STAR BACKGROUND -->
+    <div class="absolute inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-5"></div>
+  
+    <!-- FLOATING TECH ICONS -->
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-10 absolute top-10 left-10 animate-float-slow opacity-20" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-10 absolute bottom-20 left-24 animate-float-medium opacity-20" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-10 absolute top-32 right-24 animate-float-fast opacity-20" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 absolute bottom-10 right-16 animate-float-slow opacity-20" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-10 absolute top-1/2 left-[20%] animate-float-medium opacity-20" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-10 absolute bottom-1/3 right-[15%] animate-float-fast opacity-20" />
     </div>
-  </div>
-</section>
-
-<!-- Lottie Player + Typed.js -->
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  new Typed('#typing', {
-    strings: [
-      "Full Stack Web Developer",
-      "Frontend UI Designer",
-      "Backend API Architect",
-      "Cloud Deployment Enthusiast"
-    ],
-    typeSpeed: 50,
-    backSpeed: 30,
-    backDelay: 1500,
-    loop: true
-  });
-</script>
-
-<!-- Float Animations -->
-<style>
-@keyframes floatSlow {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
-}
-@keyframes floatMedium {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-}
-@keyframes floatFast {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-28px); }
-}
-.animate-float-slow { animation: floatSlow 8s ease-in-out infinite; }
-.animate-float-medium { animation: floatMedium 6s ease-in-out infinite; }
-.animate-float-fast { animation: floatFast 4s ease-in-out infinite; }
-</style>
+  
+    <!-- HERO CONTENT -->
+    <div class="relative z-10 max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 items-center gap-12 bg-black rounded-3xl border border-white/10 shadow-[0_0_60px_#00ffff22] p-8 md:p-16">
+  
+      <!-- LEFT TEXT -->
+      <div class="text-center md:text-left space-y-6" data-aos="fade-right">
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight bg-gradient-to-r from-cyan-300 via-white to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_10px_#00ffffaa]">
+          Hey, I'm Jafar Khan
+        </h1>
+        <h2 class="text-lg sm:text-xl font-mono text-cyan-300 min-h-[32px]">
+          <span id="typing" class="whitespace-nowrap"></span>
+        </h2>
+        <p class="text-gray-400 text-base max-w-md mx-auto md:mx-0">
+          I specialize in modern full-stack web development — crafting smooth frontend UIs and building scalable backend systems.
+        </p>
+        <a href="#contact" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold shadow-md transition duration-300">
+          Contact Me
+        </a>
+      </div>
+  
+      <!-- RIGHT LOTTIE -->
+      <div class="flex justify-center" data-aos="fade-left" data-aos-delay="200">
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_w51pcehl.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+          class="w-[300px] sm:w-[380px] md:w-[440px]"
+        ></lottie-player>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Lottie Player + Typed.js -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Typed('#typing', {
+      strings: [
+        "Full Stack Web Developer",
+        "Frontend UI Designer",
+        "Backend API Architect",
+        "Cloud Deployment Enthusiast"
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1500,
+      loop: true
+    });
+  </script>
+  
 
 
 
@@ -299,7 +272,7 @@
       <div class="bg-[#111111] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300" data-aos="fade-up">
         <img src="https://i.imgur.com/NUZVrnn.png" alt="Project 1" class="w-full h-56 object-cover hover:scale-105 transition duration-300" />
         <div class="p-6 text-left">
-          <h3 class="text-xl font-semibold mb-2 text-white">Expense Tracker App</h3>
+          <h3 class="text-xl font-semibold mb-2 text-white">Client Website</h3>
           <p class="text-gray-400 text-sm mb-4">Track your expenses with a modern React UI and persistent data using MongoDB.</p>
           <a href="#" class="inline-block bg-cyan-500 text-white font-medium px-5 py-2 mt-2 transition hover:bg-cyan-600">
             Live Demo
