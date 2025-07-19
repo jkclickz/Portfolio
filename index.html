@@ -352,13 +352,19 @@
     Have a project or just want to say hi? Fill out the form below or drop me a message on my socials!
   </p>
 
- <!-- Contact Form (Mailto version) -->
-<form action="mailto:jk.clickz12@gmail.com" method="POST" enctype="text/plain" class="max-w-2xl mx-auto space-y-6" data-aos="fade-up" data-aos-delay="200">
+  <!-- Contact Form -->
+  <form action="https://formsubmit.co/jk.clickz12@gmail.com" method="POST" class="max-w-2xl mx-auto space-y-6" data-aos="fade-up" data-aos-delay="200">
+    <!-- Disable CAPTCHA & redirect -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourportfolio.com/thankyou.html">
+  
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <input type="text" name="Name" placeholder="Name" required class="bg-[#111111] border border-[#2e2e2e] text-white text-sm p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
-      <input type="email" name="Email" placeholder="Email" required class="bg-[#111111] border border-[#2e2e2e] text-white text-sm p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
+      <input type="text" name="name" placeholder="Name" required class="bg-[#111111] border border-[#2e2e2e] text-white text-sm p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
+      <input type="email" name="email" placeholder="Email" required class="bg-[#111111] border border-[#2e2e2e] text-white text-sm p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
     </div>
-    <textarea name="Message" rows="5" placeholder="Your Message" required class="w-full bg-[#111111] border border-[#2e2e2e] text-white text-sm p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"></textarea>
+  
+    <textarea name="message" rows="5" placeholder="Your Message" required class="w-full bg-[#111111] border border-[#2e2e2e] text-white text-sm p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"></textarea>
+  
     <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 transition px-8 py-3 rounded-full font-semibold text-white shadow-md hover:shadow-lg duration-300">
       Send Message
     </button>
