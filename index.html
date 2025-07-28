@@ -287,56 +287,160 @@
 
 
 <!-- PROJECTS SECTION -->
-<section id="projects" class="bg-black text-white py-20 px-6 text-center">
-    <!-- Section Title -->
-    <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 uppercase mb-4" data-aos="fade-up">Projects</h2>
-  
-    <!-- Description -->
-    <p class="text-gray-400 max-w-xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="100">
+<section id="projects" class="bg-black text-white py-20 px-4 text-center">
+  <!-- Section Title -->
+  <div class="mb-12" data-aos="fade-up">
+    <h2 class="text-4xl md:text-5xl font-bold text-cyan-400 uppercase mb-4">
+      Projects
+    </h2>
+    <p class="text-gray-400 max-w-2xl mx-auto text-sm">
       Here are some of my recent works showcasing frontend, backend, and fullstack development with responsive designs.
     </p>
-  
-    <!-- Project Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-  
-      <!-- Project 1 -->
-      <div class="bg-[#111111] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300" data-aos="fade-up">
-        <img src="./img/p1.png" alt="Project 1" class="w-full h-76 object-cover hover:scale-105 transition duration-300" />
-        <div class="p-6 text-left">
-          <h3 class="text-xl font-semibold mb-2 text-white">Client Website</h3>
-          <p class="text-gray-400 text-sm mb-4">Built a modern, responsive website for a client using Tailwind CSS and JavaScript — optimized for performance, clean UI, and smooth user experience.</p>
-          <a href="https://jkclickz.github.io/CopyCat/" class="inline-block bg-cyan-500 text-white font-medium px-5 py-2 mt-2 transition hover:bg-cyan-600">
+  </div>
+
+  <!-- Filter Buttons -->
+  <div class="flex justify-center gap-4 mb-10 flex-wrap" id="project-filters">
+    <button class="filter-btn bg-cyan-500 text-white px-4 py-1.5 rounded-full font-semibold active text-sm" data-filter="all">All</button>
+    <button class="filter-btn bg-[#222] text-cyan-400 px-4 py-1.5 rounded-full font-semibold text-sm" data-filter="web">Web</button>
+    <button class="filter-btn bg-[#222] text-cyan-400 px-4 py-1.5 rounded-full font-semibold text-sm" data-filter="design">Design</button>
+    <button class="filter-btn bg-[#222] text-cyan-400 px-4 py-1.5 rounded-full font-semibold text-sm" data-filter="ai">AI</button>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto" id="project-grid">
+
+    <!-- Web Project: Client Website -->
+    <div class="project-card" data-category="web">
+      <div class="bg-[#111111] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 flex flex-col h-full">
+        <img src="./img/p1.png" alt="Client Website" class="w-full h-60 object-cover hover:scale-105 transition duration-300" />
+        <div class="p-5 flex flex-col justify-between flex-grow text-left">
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-white">Client Website</h3>
+            <p class="text-gray-400 text-sm mb-4">Built a modern, responsive website for a client using Tailwind CSS and JavaScript — optimized for performance, clean UI, and smooth user experience.</p>
+          </div>
+          <a href="https://jkclickz.github.io/CopyCat/" class="w-28 mt-auto inline-block bg-cyan-500 text-white font-medium text-sm px-4 py-1.5 transition hover:bg-cyan-600 rounded-full">
             Live Demo
           </a>
         </div>
       </div>
-  
-      <!-- Project 2 -->
-      <div class="bg-[#111111] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
-        <img src="./img/p2.png" alt="Project 2" class="w-full h-56 object-cover hover:scale-105 transition duration-300" />
-        <div class="p-6 text-left">
-          <h3 class="text-xl font-semibold mb-2 text-white">Deepfake Detection System
-        </h3>
-          <p class="text-gray-400 text-sm mb-4">Built a deep learning pipeline to detect fake videos using ResNet50 + LSTM with SHAP explainability.
+    </div>
 
-            Extracted facial features from videos using RetinaFace
-            
-            Trained CNN-LSTM model with frame-level and video-level classification
-            
-            Integrated SHAP for model explainability and visual insights
-            
-            Achieved strong accuracy and generalization across datasets</p>
-          <a href="https://github.com/jkclickz/Deepfake-Detection" class="inline-block bg-cyan-500 text-white font-medium px-5 py-2 mt-2 transition hover:bg-cyan-600">
+    <!-- AI Project: Deepfake Detection -->
+    <div class="project-card" data-category="ai">
+      <div class="bg-[#111111] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 flex flex-col h-full">
+        <img src="./img/p2.png" alt="Deepfake Detection" class="w-full h-60 object-cover hover:scale-105 transition duration-300" />
+        <div class="p-5 flex flex-col justify-between flex-grow text-left">
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-white">Deepfake Detection System</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Built a deep learning pipeline to detect fake videos using ResNet50 + LSTM with SHAP explainability.<br><br>
+              ▸ Extracted facial features using RetinaFace<br>
+              ▸ Trained CNN-LSTM model for frame-level & video-level classification<br>
+              ▸ Integrated SHAP for visual explanation<br>
+              ▸ Achieved strong accuracy across datasets
+            </p>
+          </div>
+          <a href="https://github.com/jkclickz/Deepfake-Detection" class="w-28 mt-auto inline-block bg-cyan-500 text-white font-medium text-sm px-4 py-1.5 transition hover:bg-cyan-600 rounded-full">
             View Code
           </a>
         </div>
       </div>
-  
-      <!-- Add more projects if needed... -->
-  
     </div>
-  </section>
-  
+
+    <!-- Design Projects -->
+    <div class="project-card" data-category="design">
+      <div class="bg-[#111111] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 flex flex-col h-full">
+        <img src="./img/Biryani.png" alt="Canva Poster" class="w-full h-60 object-cover cursor-pointer hover:scale-105 transition duration-300" onclick="openImageModal(this.src, 'Client poster design made in Canva.')" />
+        <div class="p-5 flex-grow text-left">
+          <h3 class="text-xl font-semibold mb-2 text-white">Canva Poster</h3>
+          <p class="text-gray-400 text-sm">Social media poster created in Canva for a marketing campaign.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="design">
+      <div class="bg-[#111111] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 flex flex-col h-full">
+        <img src="./img/i1.png" alt="Event Poster" class="w-full h-60 object-cover cursor-pointer hover:scale-105 transition duration-300" onclick="openImageModal(this.src, 'Event poster created in Canva for a cultural festival.')" />
+        <div class="p-5 flex-grow text-left">
+          <h3 class="text-xl font-semibold mb-2 text-white">LOGO DESIGN</h3>
+          <p class="text-gray-400 text-sm">Logo designed in Canva for a Restaurant.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="design">
+      <div class="bg-[#111111] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 flex flex-col h-full">
+        <img src="./img/Flyer.png" alt="Business Card Design" class="w-full h-60 object-cover cursor-pointer hover:scale-105 transition duration-300" onclick="openImageModal(this.src, 'Minimal business card design for a local brand.')" />
+        <div class="p-5 flex-grow text-left">
+          <h3 class="text-xl font-semibold mb-2 text-white"> Flyer Design</h3>
+          <p class="text-gray-400 text-sm">A clean and minimal Flyer for a client’s personal brand.</p>
+        </div>
+      </div>
+    </div>
+    <div class="project-card" data-category="design">
+      <div class="bg-[#111111] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 flex flex-col h-full">
+        <img src="./img/1.png" alt="Business Card Design" class="w-full h-60 object-cover cursor-pointer hover:scale-105 transition duration-300" onclick="openImageModal(this.src, 'Minimal business card design for a local brand.')" />
+        <div class="p-5 flex-grow text-left">
+          <h3 class="text-xl font-semibold mb-2 text-white">Business Card Design</h3>
+          <p class="text-gray-400 text-sm">A clean and minimal Canva business card for a client’s personal brand.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Enlarged Image -->
+  <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#111] rounded-lg overflow-hidden max-w-3xl w-full relative">
+      <button class="absolute top-4 right-4 text-white text-2xl" onclick="closeImageModal()">&times;</button>
+      <img id="modalImage" src="" alt="Project Full View" class="w-full object-contain max-h-[80vh]" />
+      <div class="p-4 text-white text-sm" id="modalCaption"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function openImageModal(src, caption) {
+    document.getElementById('modalImage').src = src;
+    document.getElementById('modalCaption').innerText = caption;
+    document.getElementById('imageModal').classList.remove('hidden');
+  }
+
+  function closeImageModal() {
+    document.getElementById('imageModal').classList.add('hidden');
+  }
+</script>
+
+
+
+
+<!-- Project Filter Script -->
+<script>
+  const buttons = document.querySelectorAll(".filter-btn");
+  const projects = document.querySelectorAll(".project-card");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const filter = btn.getAttribute("data-filter");
+
+      // Button highlight
+      buttons.forEach(b => b.classList.remove("bg-cyan-500", "text-white"));
+      buttons.forEach(b => b.classList.add("bg-[#222]", "text-cyan-400"));
+      btn.classList.remove("bg-[#222]", "text-cyan-400");
+      btn.classList.add("bg-cyan-500", "text-white");
+
+      // Filter logic
+      projects.forEach(card => {
+        const category = card.getAttribute("data-category");
+        if (filter === "all" || category === filter) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  });
+</script>
+
 <!-- CONTACT SECTION -->
 <section id="contact" class="bg-black text-white py-20 px-6 text-center" id="contact">
   <!-- Heading -->
